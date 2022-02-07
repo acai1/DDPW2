@@ -1,0 +1,21 @@
+---
+title: "Developing Data Products Week 2 Project"
+author: "Anna Cai"
+date: "07/02/2022"
+output: html_document
+---
+
+## Summary
+
+This webpage was created as part of completion of Developing Data Products. It was created using the leaflet package for mapping.
+
+## The Map
+Let's create a map of Melbourne.
+```{r map}
+
+library(leaflet) #load required package
+melb <- leaflet() %>%
+  addTiles()
+melb = addMarkers(melb, lat = -37.840935, lng = 144.946457)
+melb
+```
